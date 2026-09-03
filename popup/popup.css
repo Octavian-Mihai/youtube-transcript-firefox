@@ -1,0 +1,62 @@
+:root {
+  color-scheme: light dark;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 260px;
+  max-width: 320px;
+  font: 13px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: CanvasText;
+  background: Canvas;
+}
+
+main {
+  padding: 12px 14px 14px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.status {
+  margin: 0;
+  color: CanvasText;
+}
+
+.status.is-ok {
+  color: #0b7a33;
+}
+
+.status.is-error {
+  color: #b42318;
+}
+
+@media (prefers-color-scheme: dark) {
+  .status.is-ok {
+    color: #7ddea0;
+  }
+
+  .status.is-error {
+    color: #ff8a80;
+  }
+}
+
+.manual {
+  margin: 10px 0 0;
+  max-height: 180px;
+  overflow: auto;
+  padding: 8px;
+  border-radius: 6px;
+  background: color-mix(in srgb, CanvasText 8%, Canvas);
+  white-space: pre-wrap;
+  word-break: break-word;
+  font: 11px/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
