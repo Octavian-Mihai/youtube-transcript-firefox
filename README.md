@@ -9,6 +9,23 @@ Firefox extension that copies the current YouTube video’s captions to the clip
 
 Use the toolbar icon or the **Copy transcript** button on watch pages and Shorts.
 
+## Screenshots
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="screenshots/onpage-button.svg" width="420" alt="Copy transcript button on a YouTube watch page"><br>
+      <sub>On-page button, under the video</sub>
+    </td>
+    <td align="center">
+      <img src="screenshots/popup-preview.svg" width="360" alt="Toolbar popup after copying a transcript"><br>
+      <sub>Toolbar popup after copying</sub>
+    </td>
+  </tr>
+</table>
+
+*(UI previews, not live captures — see [screenshots/](screenshots/).)*
+
 ## Install as a temporary add-on
 
 1. Open Firefox (128 or newer).

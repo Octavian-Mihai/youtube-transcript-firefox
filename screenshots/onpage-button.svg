@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 150" width="420" height="150" font-family="-apple-system, 'Segoe UI', system-ui, sans-serif">
+  <rect width="420" height="150" fill="#0f0f0f"/>
+
+  <!-- fake video frame -->
+  <rect x="16" y="14" width="388" height="70" rx="6" fill="#1f1f1f"/>
+  <polygon points="196,40 196,68 224,54" fill="#3f3f3f"/>
+
+  <!-- title -->
+  <rect x="16" y="94" width="220" height="10" rx="3" fill="#e5e5e5"/>
+  <rect x="16" y="110" width="120" height="8" rx="3" fill="#9a9a9a"/>
+
+  <!-- actions row -->
+  <g>
+    <rect x="16" y="128" width="104" height="26" rx="13" fill="#272727"/>
+    <text x="30" y="145" font-size="11" fill="#f1f1f1">👍 1.2K</text>
+
+    <rect x="128" y="128" width="86" height="26" rx="13" fill="#272727"/>
+    <text x="142" y="145" font-size="11" fill="#f1f1f1">Share</text>
+
+    <!-- extension button, highlighted -->
+    <rect x="222" y="128" width="150" height="26" rx="13" fill="#3ea6ff"/>
+    <text x="236" y="145" font-size="11" fill="#06233a" font-weight="650">⧉ Copy transcript</text>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 150" width="360" height="150" font-family="-apple-system, 'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="360" height="150" fill="#f3f4f6"/>
+
+  <!-- toolbar strip -->
+  <rect x="0" y="0" width="360" height="26" fill="#e5e7eb"/>
+  <circle cx="14" cy="13" r="4" fill="#ef4444"/>
+  <circle cx="28" cy="13" r="4" fill="#f59e0b"/>
+  <circle cx="42" cy="13" r="4" fill="#22c55e"/>
+  <rect x="300" y="6" width="14" height="14" rx="3" fill="#dc2626"/>
+  <path d="M304 9.5 L306 12.5 L310 12.5 L307 14.5 L308.2 17.5 L305 15.7 L301.8 17.5 L303 14.5 L300 12.5 L304 12.5 Z" fill="#fff" transform="scale(0.9) translate(33,3)"/>
+
+  <!-- popup panel -->
+  <g filter="url(#shadow)">
+    <rect x="230" y="28" width="120" height="78" rx="8" fill="#ffffff" stroke="#d1d5db"/>
+    <text x="244" y="48" font-size="11" font-weight="650" fill="#111827">YouTube Transcript</text>
+    <text x="244" y="65" font-size="10" fill="#0b7a33">Copied 42 lines.</text>
+  </g>
+
+  <text x="14" y="120" font-size="12" fill="#6b7280">Toolbar icon → popup</text>
+</svg>
