@@ -9,6 +9,30 @@ Firefox extension that copies the current YouTube video’s captions to the clip
 
 Use the toolbar icon or the **Copy transcript** button on watch pages and Shorts.
 
+
+## Architecture
+
+```mermaid
+flowchart LR
+    subgraph Tab["YouTube tab"]
+        Main["content/main.js<br/>world: MAIN<br/>reads player caption data"]
+        Iso["content/isolated.js<br/>injects Copy button, clipboard write"]
+        Page[(YouTube page / player)]
+    end
+    Popup["popup/ (html · js · css)<br/>toolbar popup"]
+    BG[background.js]
+    Clip[(Clipboard)]
+
+    Main <-->|reads| Page
+    Main <-->|window.postMessage| Iso
+    Popup -->|activeTab + scripting| BG
+    BG -->|request transcript| Iso
+    Iso --> Clip
+    Popup --> Clip
+```
+
+More detail: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
+
 ## Screenshots
 
 <table>
